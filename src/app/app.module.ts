@@ -6,11 +6,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatDividerModule, MatMenuModule} from '@angular/material';
 import {MenuComponent} from './menu/menu.component';
 import {MatIconModule} from '@angular/material/icon';
+import {ServersEnvironmentComponent} from './servers-environment/servers-environment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    ServersEnvironmentComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MatButtonModule, MatDividerModule, MatMenuModule, MatIconModule
