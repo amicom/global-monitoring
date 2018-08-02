@@ -7,14 +7,14 @@ import {MatButtonModule, MatDividerModule, MatMenuModule} from '@angular/materia
 import {MenuComponent} from './menu/menu.component';
 import {MatIconModule} from '@angular/material/icon';
 import {ServersEnvironmentComponent} from './servers-environment/servers-environment.component';
-import {ServerComponent} from './server/server.component';
+import { ServerComponent } from './server/server.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ServersEnvironmentComponent,
-    ServerComponent
+    ServerComponent,
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MatButtonModule, MatDividerModule, MatMenuModule, MatIconModule
