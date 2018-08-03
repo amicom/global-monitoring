@@ -7,16 +7,17 @@ app-menu {
 #main-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  & > app-servers-environment {
+  height: 100vh;
+  align-content: stretch;
+  & > * {
     display: flex;
-    flex: 1 auto;
+    flex-grow: 1;
   }
 }
 
 .divider {
   width: 100%;
-  height: 2px;
+  max-height: 2px;
   background: white;
   flex: 0 auto;
 }
