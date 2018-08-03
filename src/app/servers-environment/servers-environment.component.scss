@@ -8,16 +8,17 @@
 .outer {
   background-color: red;
   overflow: auto;
-  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
 }
 
 .inner {
   margin: auto;
-  flex: 0 0 auto;
   & > div {
     background-color: green;
     margin-right: 10px;
     flex-shrink: 0;
+    max-height: fit-content;
     &:last-child {
       margin-right: 0;
     }
