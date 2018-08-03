@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private name: string, private ip: string, private status: string, private numOfUsers: number) { }
 
   ngOnInit() {
   }

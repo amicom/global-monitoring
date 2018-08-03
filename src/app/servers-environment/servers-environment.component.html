@@ -1,28 +1,11 @@
   <div class="outer container">
-    <div id="servers-list" class="inner container">
-      <div>
-        <p>RT1</p>
-        <p>RUNNING</p>
-        <p>[15.185.168.10]</p>
-        <p>500</p>
-        <p>21%</p>
-      </div>
-      <div>
-        <p>RT1</p>
-        <p>RUNNING</p>
-        <p>[15.185.168.10]</p>
-        <p>500</p>
-        <p>21%</p>
-      </div>
-      <div>
-        <p>RT1</p>
-        <p>RUNNING</p>
-        <p>[15.185.168.10]</p>
-        <p>500</p>
-        <p>21%</p>
-      </div>
-    </div>
+      <div id="servers-list" class="inner container">
+          <div  *ngFor="let server of servers">
+          {{server.name}}  
+          </div>
+        </div>      
   </div>
   <div id="info-pane">
     <p>info-pane</p>
   </div>
+

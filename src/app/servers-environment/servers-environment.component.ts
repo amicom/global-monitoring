@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import { EnvironmentService } from '../environment.service';
+import { Server } from '../server';
 
 @Component({
   selector: 'app-servers-environment',
@@ -7,10 +9,17 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ServersEnvironmentComponent implements OnInit {
 
-  constructor() {
+  servers: Server[];
+
+  constructor(private environment: EnvironmentService) {
   }
 
   ngOnInit() {
+    this.getServers();
+  }
+
+  getServers(): void {
+    this.servers = this.environment.getServers();
   }
 
 }

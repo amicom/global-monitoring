@@ -8,6 +8,7 @@ import {MenuComponent} from './menu/menu.component';
 import {MatIconModule} from '@angular/material/icon';
 import {ServersEnvironmentComponent} from './servers-environment/servers-environment.component';
 import { ServerComponent } from './server/server.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,9 @@ import { ServerComponent } from './server/server.component';
     ServerComponent,
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, MatButtonModule, MatDividerModule, MatMenuModule, MatIconModule
+    BrowserModule, HttpClientModule, BrowserAnimationsModule, MatButtonModule, MatDividerModule, MatMenuModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}
