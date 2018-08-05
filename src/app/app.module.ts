@@ -9,6 +9,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {ServersEnvironmentComponent} from './servers-environment/servers-environment.component';
 import { ServerComponent } from './server/server.component';
 import { HttpClientModule } from '@angular/common/http';
+import {FlexLayoutModule} from '@angular/flex-layout';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
     ServerComponent,
   ],
   imports: [
-    BrowserModule, HttpClientModule, BrowserAnimationsModule, MatButtonModule, MatDividerModule, MatMenuModule, MatIconModule
+    BrowserModule,
+    HttpClientModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
