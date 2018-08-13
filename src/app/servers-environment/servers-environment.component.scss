@@ -24,10 +24,28 @@
     }
   }
 }
-
+*/
 //the div for the information on the right side
 #info-pane {
-  background-color: blue;
-  flex-shrink: 0;
+  background-color: orange;
 }
-*/
+
+
+
+#servers-list-container{
+  background-color: green;
+  & > div{
+    margin: auto
+  }
+}
+
+.container{
+  overflow: auto;
+}
+
+.server-box{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  display: block;
+}

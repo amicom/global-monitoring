@@ -6,6 +6,7 @@ app-menu {
 
 #main-container{
   height: 100vh;
+  //overflow: hidden;
 }
 
 /* 
@@ -21,10 +22,15 @@ app-menu {
 }
  */
 
-/*  
+ 
 .divider {
   width: 100%;
-  max-height: 2px;
+  height: 2px;
   background: white;
-  flex: 0 auto;
-} */
+}
+
+app-servers-environment{
+  background-color: blue;
+  overflow:auto; 
+  //height: 100%;
+}

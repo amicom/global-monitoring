@@ -1,12 +1,10 @@
-<div class="container">
-  <div class="outer container">
-      <div id="servers-list" class="inner container">
-          <div  *ngFor="let server of servers">
-          {{server.name}}  
-          </div>
-        </div>      
+<div id="servers-list-container" class="container" fxLayout fxFlex>
+  <div fxLayout fxLayoutGap="20px">
+    <div class="server-box" *ngFor="let server of servers">
+      {{server.name}}
+    </div>
   </div>
-  <div id="info-pane">
-    <p>info-pane</p>
-  </div>
+</div>
+<div fxFlex="none" id="info-pane" class="container">
+  <p>info-pane</p>
 </div>
