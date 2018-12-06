@@ -11,7 +11,7 @@ export class ServersEnvironmentComponent implements OnInit {
 
   servers: Server[];
 
-  constructor(private environment: EnvironmentService) {
+  constructor(private environmentService: EnvironmentService) {
   }
 
   ngOnInit() {
@@ -19,7 +19,11 @@ export class ServersEnvironmentComponent implements OnInit {
   }
 
   getServers(): void {
-    this.servers = this.environment.getServers();
+    this.environmentService.getServers();
+    // .subscribe((data: Config) => this.config = {
+    //     heroesUrl: data['heroesUrl'],
+    //     textfile:  data['textfile']
+    // });
   }
 
 }
